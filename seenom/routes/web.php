@@ -11,6 +11,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+$router->get('/', 'IndexController@index');
+
+$router->get('/{any}', function () use ($router) {
     return $router->app->version();
 });
