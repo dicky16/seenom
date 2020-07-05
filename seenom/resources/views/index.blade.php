@@ -1,3 +1,4 @@
+<?php $img = 'http://localhost/seenomsrc/img/' ?>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -61,7 +62,7 @@
           </div>
           <div class="blur">
             <form>
-                <img src="ho.png" style="width: 55%;">
+                <img src="<?php echo $img."/" ?>ho.png" style="width: 55%;">
             <!-- <input type="text" name="" placeholder="Email:" />
             <input type="text" name="" placeholder="Password:" /><a class="button" title="Behance" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/gallery/86619879/Landing-Page-IOGO-MEDIA-(Concept-Update)">Click here</a> -->
             </form>
@@ -72,13 +73,13 @@
         <h2>ABO<span>UT</span></h2>
           <div class="slider autoplay">
             <div class="block b_on">
-              <figure><img src="8.png"  style="width: 55%" alt="" />
+              <figure><img src="<?php echo $img."/" ?>8.png"  style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>270 ML</p>
             </div>
             <div class="block b_tw">
-              <figure><img src="6.png" style="width: 55%" alt="" />
+              <figure><img src="<?php echo $img."/" ?>6.png" style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>500 ML</p>
@@ -87,13 +88,13 @@
           <p style="font-size: 1.3rem">Minuman sehat ini terbuat dari daun asam, gula asli, kunyit, asam jawa. Diolah 100% tanpa bahan pengawet menjadikan minuman ini menyehatkan yang sebenarnya.SEENOM See Freshy Feel Healthy.</p>
           <div class="slider autoplay">
             <div class="block b_th">
-              <figure><img src="9.png" style="width: 55%" alt="" />
+              <figure><img src="<?php echo $img."/" ?>9.png" style="width: 55%" alt="" />
                 <figcaption>BERUSH KENCUR</figcaption>
               </figure>
               <p>270 ML</p>
             </div>
             <div class="block b_fo">
-              <figure><img src="7.png" style="width: 55%" alt="" />
+              <figure><img src="<?php echo $img."/" ?>7.png" style="width: 55%" alt="" />
                 <figcaption>BERUSH KENCUR</figcaption>
               </figure>
               <p>500 ML</p>
@@ -145,28 +146,28 @@
           <center><p style="font-size: 1.3rem">Ini adalah beberapa testimoni dari pelanggan yang membeli SEENOM dan BERUSH KENCUR.</p></center>
           <div class="slider tes">
             <div class="blockquote">
-              <img src="s1.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s1.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s2.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s2.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s3.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s3.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s4.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s4.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s5.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s5.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s6.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s6.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s7.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s7.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="s8.png" style="width: 85%" alt="" />
+              <img src="<?php echo $img."/" ?>s8.png" style="width: 85%" alt="" />
             </div>
           </div>
       </section>
