@@ -19,15 +19,20 @@ class LoginController extends Controller
         //
     }
 
-    public function login()
+    public function login(Request $request)
     {
+      $sesi = $request->session()->get('izin');
+      if($sesi == "izin") {
+        return redirect('admin');
+      }
+
       return view('admin/login');
     }
 
     public function logout(Request $request)
     {
       $request->session()->flush();
-      return view('admin/login');
+      return view('admin/ login');
     }
 
     public function cekLogin(Request $request)
@@ -53,7 +58,7 @@ class LoginController extends Controller
         return redirect('admin');
       } else {
         $request->session()->put('izin', 'tidak');
-        return redirect('admin/login');
+        return redirect('login');
       }
     }
 }

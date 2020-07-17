@@ -6,7 +6,7 @@
   </head>
   <body>
     <form class="" action="{{ url('admin/testi-tambah') }}" method="post" enctype="multipart/form-data">
-      Nama : <input type="text" name="keterangan" placeholder="Masukkan keterangan">
+      keterangan : <input type="text" name="keterangan" placeholder="Masukkan keterangan">
       <br>
       Image : <input type="file" name="imageTestimoni">
       <br>

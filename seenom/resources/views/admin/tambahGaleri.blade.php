@@ -5,9 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="{{ url('admin/katalog-tambah') }}" method="post" enctype="multipart/form-data">
-      Harga : <input type="text" name="harga" placeholder="Masukkan harga produk">
-      <br>
+    <form class="" action="{{ url('admin/galeri-tambah') }}" method="post" enctype="multipart/form-data">
       Image : <input type="file" name="imageGaleri">
       <br>
       <input type="submit" name="submit" value="Tambah">

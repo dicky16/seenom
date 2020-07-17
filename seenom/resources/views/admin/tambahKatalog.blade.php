@@ -14,8 +14,8 @@
       <br>
       <input type="submit" name="submit" value="Tambah">
     </form>
-    <?php $status = "ok"; ?>
-    @if ($status == "ok")
+    <?php $status = null; ?>
+    @if ($status == null)
       <script type="text/javascript">
       Swal.fire({
         icon: 'error',

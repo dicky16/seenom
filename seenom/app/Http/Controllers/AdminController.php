@@ -57,9 +57,10 @@ class AdminController extends Controller
             'img_path' => $image,
           ]);
           if($insertKatalog) {
+            $request->session()->flash('status', 'Suskes upload katalog!');
             return redirect('admin');
           } else {
-            $request->session()->flash('status', 'Sukses upload katalog!');
+            $request->session()->flash('status', 'Gagal upload katalog!');
             return redirect('admin/katalog-tambah');
           }
         } else {
@@ -68,8 +69,8 @@ class AdminController extends Controller
         }
 
       } else {
-        // $request->session()->flash('status', 'Tidak ada image!');
-        return redirect('admin/katalog-tambah', ['status', 'gagal']);
+        $request->session()->flash('status', 'Tidak ada image!');
+        return redirect('admin/katalog-tambah');
       }
 
     }
@@ -100,13 +101,15 @@ class AdminController extends Controller
         if($file->move($destinationPath, $image)) {
           $this->compressImage($image, 'assets/seenom/testi');
           $insertKatalog = DB::table('testimoni')->insert([
-            'keterangan' => $request->nama,
+            'keterangan' => $request->keterangan,
             'img_path' => $image,
           ]);
           if($insertKatalog) {
+            $request->session()->flash('status', 'Sukses upload katalog!');
             return redirect('admin/testi-tambah');
           } else {
-            return redirect('admin');
+            $request->session()->flash('status', 'Gagal upload katalog!');
+            return redirect('admin/testi-tambah');
           }
         } else {
           return redirect()->back()->with('status', 'gagal upload katalog');
@@ -124,7 +127,7 @@ class AdminController extends Controller
       return view('admin/tambahGaleri');
     }
 
-    public function tempambahGaleri()
+    public function tambahGaleri(Request $request)
     {
       if($request->hasFile('imageGaleri')) {
         $file = $request->file('imageGaleri');
@@ -136,21 +139,25 @@ class AdminController extends Controller
         $image = 'galeri-' . time() . '.' . $file_ext;
 
         if($file->move($destinationPath, $image)) {
-          $this->compressImage($image, 'assets/seenom/galeri');
+          $this->compressImage($image, 'assets/seenom/galeri/');
           $insertKatalog = DB::table('galeri')->insert([
             'img_path' => $image,
           ]);
           if($insertKatalog) {
-            return redirect('admin/galeri-tambah')->with('status', 'sukses tambah galeri');
+            $request->session()->flash('status', 'Sukses upload katalog!');
+            return redirect('admin/galeri-tambah');
           } else {
-            return redirect('admin/galeri-tambah')->with('status', 'gagal tambah galeri');
+            $request->session()->flash('status', 'Gagal upload katalog!');
+            return redirect('admin/galeri-tambah');
           }
         } else {
-          return redirect('admin/galeri-tambah')->with('status', 'gagal tambah galeri');
+          $request->session()->flash('status', 'Gagal upload katalog!');
+          return redirect('admin/galeri-tambah');
         }
 
       } else {
-        return redirect('admin/galeri-tambah')->with('status', 'tidak ada image');
+        $request->session()->flash('status', 'Gagal upload katalog!');
+        return redirect('admin/galeri-tambah');
       }
 
     }
