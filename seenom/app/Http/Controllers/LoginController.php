@@ -31,8 +31,8 @@ class LoginController extends Controller
 
     public function logout(Request $request)
     {
-      $request->session()->flush();
-      return view('admin/ login');
+      $request->session()->forget('izin');
+      return view('admin/login');
     }
 
     public function cekLogin(Request $request)

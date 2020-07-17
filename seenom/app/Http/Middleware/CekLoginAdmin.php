@@ -17,7 +17,7 @@ class CekLoginAdmin
     {
         $sesi = $request->session()->get('izin');
         // dd($sesi);
-        if($sesi == "tidak") {
+        if($sesi == "tidak" || $sesi == null) {
           return redirect('login');
           // dd('raoleh');
         }
