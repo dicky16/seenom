@@ -17,6 +17,16 @@ $router->group(['prefix' => 'admin'], function () use ($router) {
     $router->get('login', 'LoginController@login');
     $router->post('login', 'LoginController@cekLogin');
     $router->get('logout', 'LoginController@logout');
+    $router->get('coba', 'AdminController@coba');
+    //katalog
+    $router->get('katalog-tambah', 'AdminController@getTambahKatalog');
+    $router->post('katalog-tambah', 'AdminController@tambahKatalog');
+    //testimoni
+    $router->get('testi-tambah', 'AdminController@getTambahTesti');
+    $router->post('testi-tambah', 'AdminController@tambahTesti');
+    //galeri
+    $router->get('galeri-tambah', 'AdminController@getTambahGaleri');
+    $router->post('galeri-tambah', 'AdminController@tambahGaleri');
 });
 
 // $router->get("ok", [

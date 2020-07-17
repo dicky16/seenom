@@ -5,6 +5,6 @@
     <title></title>
   </head>
   <body>
-    <p>Ini halaman admin cuyyyy</p>
+    <p>coba cuy</p>
   </body>
 </html>
