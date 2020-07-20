@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-title" content="CodePen">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="stylesheet" href="http://localhost/seenomberushkencur/assets/seenom/css/anu.css">
+<link rel="stylesheet" href="http://ff5e77b7a984.ngrok.io/seenomberushkencur/assets/seenom/css/anu.css">
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <title>seenom &amp; berushkencur</title>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,700&display=swap" rel="stylesheet">
@@ -73,7 +73,7 @@
         <h2>ABO<span>UT</span></h2>
           <div class="slider autoplay">
             <div class="block b_on">
-              <figure><img src="<?php echo $img."/" ?>8.png"  style="width: 55%" alt="" />
+              <figure><img src="{{asset('seenom/img/8.pmg')}}"  style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>270 ML</p>
