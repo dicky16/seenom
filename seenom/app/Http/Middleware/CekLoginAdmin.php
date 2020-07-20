@@ -16,16 +16,10 @@ class CekLoginAdmin
     public function handle($request, Closure $next)
     {
         $sesi = $request->session()->get('izin');
-        // dd($sesi);
         if($sesi == "tidak" || $sesi == null) {
           return redirect('login');
-          // dd('raoleh');
         }
 
-        // if($sesi == 'tidak') {
-        //   $request->session()->flush();
-        //   return redirect('admin/login');
-        // }
         return $next($request);
     }
 }

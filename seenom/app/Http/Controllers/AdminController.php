@@ -162,6 +162,13 @@ class AdminController extends Controller
 
     }
 
+    public function getCountViews()
+    {
+      $count = DB::table('count_views')
+      ->select('views')->get();
+      dd($count);
+    }
+
     function compressImage($source, $path)
     {
       $filepath = public_path($path.$source);
