@@ -5,12 +5,12 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="{{ url('admin/katalog-tambah') }}" method="post" enctype="multipart/form-data">
+    <form class="" action="{{ url('admin/katalog') }}" method="post" enctype="multipart/form-data">
       Nama : <input type="text" name="nama" placeholder="Masukkan nama produk">
       <br>
       Harga : <input type="text" name="harga" placeholder="Masukkan harga produk">
       <br>
-      Image : <input type="file" name="imageKatalog">
+      Image : <input type="file" name="gambar">
       <br>
       <input type="submit" name="submit" value="Tambah">
     </form>
