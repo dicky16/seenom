@@ -18,33 +18,31 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>No.</th>
+                                                <th>Nama</th>
+                                                <th>Harga</th>
+                                                <th>Gambar</th>
+                                                <th>Aksi</th>
                                             </tr>
                                         </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                            </tr>
-                                        </tfoot>
                                         <tbody>
+                                        @foreach($data as $produk)
+                                        <?php $no = null; ?>
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
+                                                <td>{{$no++}}</td>
+                                                <td>{{$produk->nama}}</td>
+                                                <td>{{$produk->harga}}</td>
+                                                <td>{{$produk->img_path}}</td>
+                                                <td>
+                                                    <a href="javascript:void(0)" data-id="'.$row->id.'" class="btn-edit-faq" style="font-size: 18pt; text-decoration: none;" class="mr-3">
+                                                    <i class="fas fa-pen-square"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0)" data-id="'.$row->id.'" class="btn-delete-faq" style="font-size: 18pt; text-decoration: none; color:red;">
+                                                    <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
+                                        @endforeach
                                         </tbody>
                                     </table>
                                 </div>
@@ -132,6 +130,9 @@ $(document).ready(function() {
                         timer: 1200,
                         showConfirmButton: false
                     });
+                    $("#tambahProduk").modal("hide");
+                    $("#form-tambah-produk").trigger("reset");
+                    location.reload();
                 } else if(data.success == false) {
                     Swal.fire({
                         icon: 'error',

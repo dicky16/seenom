@@ -47,15 +47,16 @@ class LoginController extends Controller
       $username = $request->input('username');
       $password = $request->input('password');
 
-      $user = User::where('username', $username)->first();
+      $user = User::where('username', $username)->get();
 
       if(!$user) {
         dd('salah');
       }
 
-      if(Hash::check($password, $user->password)) {
+      if(Hash::check($password, $user[0]->password)) {
         $request->session()->put('izin', 'izin');
-        return redirect('admin');
+        return redirect('admin')->withCookie(cookie('name', $user[0]->name, 3600));
+        // return redirect('admin');
       } else {
         $request->session()->put('izin', 'tidak');
         return redirect('login');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a02bfebf02fda78f4550c3c46efb0d6",
+    "content-hash": "b607639f652e01b1acec6a0877eae585",
     "packages": [
         {
             "name": "brick/math",
@@ -726,6 +726,52 @@
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
             "time": "2020-05-13T20:55:30+00:00"
+        },
+        {
+            "name": "illuminate/cookie",
+            "version": "v7.29.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cookie.git",
+                "reference": "4e932cc1160cf6cbdcde0ec46e371fde2c21c60d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cookie/zipball/4e932cc1160cf6cbdcde0ec46e371fde2c21c60d",
+                "reference": "4e932cc1160cf6cbdcde0ec46e371fde2c21c60d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5|^8.0",
+                "symfony/http-foundation": "^5.0",
+                "symfony/http-kernel": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Cookie\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Cookie package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-10-27T15:11:37+00:00"
         },
         {
             "name": "illuminate/database",

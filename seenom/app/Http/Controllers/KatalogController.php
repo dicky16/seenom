@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Validator;
+use Validator, Auth;
 
 class KatalogController extends Controller
 {
     public function index()
     {
         $data = DB::table('katalog')->get();
-        return view('admin.katalog');
+        dd(Auth::user());
+        return view('admin.katalog', compact('data'));
     }
 
     public function tes()
@@ -31,12 +32,11 @@ class KatalogController extends Controller
             $fileName = $file->getClientOriginalName();
             $fileNameArr = explode('.', $fileName);
             $file_ext = end($fileNameArr);
-            $destinationPath = '/assets/img/produk';
+            $destinationPath = './assets/img/produk';
             $image = 'katalog-' . time() . '.' . $file_ext;
     
             $file->move($destinationPath, $image, "");
-            dd('ok');
-              $this->compressImage($image, 'assets/img/produk');
+            //   $this->compressImage($image, 'assets/img/produk');
               $insertKatalog = DB::table('katalog')->insert([
                 'nama' => $request->nama,
                 'harga' => $request->harga,
