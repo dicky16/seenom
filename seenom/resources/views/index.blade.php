@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-title" content="CodePen">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="stylesheet" href="http://ff5e77b7a984.ngrok.io/seenomberushkencur/assets/seenom/css/anu.css">
+<link rel="stylesheet" href="{{ url('assets/seenom/css/anu.css') }}">
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <title>seenom &amp; berushkencur</title>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,700&display=swap" rel="stylesheet">
@@ -73,13 +73,13 @@
         <h2>ABO<span>UT</span></h2>
           <div class="slider autoplay">
             <div class="block b_on">
-              <figure><img src="{{asset('seenom/img/8.pmg')}}"  style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/img')}}/8.png"  style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>270 ML</p>
             </div>
             <div class="block b_tw">
-              <figure><img src="<?php echo $img."/" ?>6.png" style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/img')}}/6.png" style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>500 ML</p>
@@ -146,28 +146,28 @@
           <center><p style="font-size: 1.3rem">Ini adalah beberapa testimoni dari pelanggan yang membeli SEENOM dan BERUSH KENCUR.</p></center>
           <div class="slider tes">
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s1.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s1.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s2.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s2.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s3.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s3.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s4.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s4.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s5.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s5.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s6.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s6.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s7.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s7.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="<?php echo $img."/" ?>s8.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/img')}}/s8.png" style="width: 85%" alt="" />
             </div>
           </div>
       </section>
@@ -175,22 +175,22 @@
         <h2>GALL<span>ERY</span></h2>
           <div class="grid g_three news">
             <div class="post">
-              <center><img src="w1.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w1.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="w2.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w2.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="w7.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w7.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="w4.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w4.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="w6.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w6.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="w5.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/img')}}/w5.jpeg" style="width: 80%"></center>
             </div>
           </div>
       </section>

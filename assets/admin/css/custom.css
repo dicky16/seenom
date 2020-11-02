@@ -1,0 +1,72 @@
+.btn-custom { 
+  color: #ffffff; 
+  background-color: #008080; 
+  border-color: #E51DF0; 
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #ffffff; 
+  background-color: #05395c; 
+  border-color: #05395c; 
+} 
+ 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  background-image: none; 
+} 
+ 
+.btn-custom.disabled, 
+.btn-custom[disabled], 
+fieldset[disabled] .btn-custom, 
+.btn-custom.disabled:hover, 
+.btn-custom[disabled]:hover, 
+fieldset[disabled] .btn-custom:hover, 
+.btn-custom.disabled:focus, 
+.btn-custom[disabled]:focus, 
+fieldset[disabled] .btn-custom:focus, 
+.btn-custom.disabled:active, 
+.btn-custom[disabled]:active, 
+fieldset[disabled] .btn-custom:active, 
+.btn-custom.disabled.active, 
+.btn-custom[disabled].active, 
+fieldset[disabled] .btn-custom.active { 
+  background-color: #05395c; 
+  border-color: #E51DF0; 
+} 
+ 
+.btn-custom .badge { 
+  color: #05395c; 
+  background-color: #ffffff; 
+}
+
+.ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.bg-cari-pesawat {
+  margin-top: 10px;
+  background-color: #3fbfd4;
+  padding-bottom: 10px;
+}
+
+.bg-travelisia{
+  background-color: #008080 !important; 
+}
+
+.padding-text-tips {
+  padding: 3px;
+}
+
+.margin-bottom-custom{
+  margin-bottom: 10px;
+}
+
+.margin-left-custom {
+  margin-left: 10px;
+}

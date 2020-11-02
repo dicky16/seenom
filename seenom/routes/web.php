@@ -16,8 +16,11 @@ $router->group(['prefix' => 'admin', 'middleware' => 'cekAdmin'], function () us
     $router->get('/', 'AdminController@index');
     $router->get('coba', 'AdminController@coba');
     //katalog
-    $router->get('katalog-tambah', 'AdminController@getTambahKatalog');
-    $router->post('katalog-tambah', 'AdminController@tambahKatalog');
+    $router->group(['prefix' => 'katalog'], function () use ($router) {
+        $router->get('/', 'KatalogController@index');
+        $router->get('tes', 'KatalogController@tes');
+        $router->post('/', 'KatalogController@tambahKatalog');
+    });
     //testimoni
     $router->get('testi-tambah', 'AdminController@getTambahTesti');
     $router->post('testi-tambah', 'AdminController@tambahTesti');
