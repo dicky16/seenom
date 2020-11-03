@@ -28,7 +28,7 @@
 <body translate="no">
   <div class="smooth">
       <header id="top">
-        <h3>seenomberushkencur</h3>
+        <h3>seenomberushkencur{{url('')}}</h3>
           <nav>
           <ul>
             <li><a href="#home" title="Home">Home</a></li>
@@ -73,13 +73,13 @@
         <h2>ABO<span>UT</span></h2>
           <div class="slider autoplay">
             <div class="block b_on">
-              <figure><img src="{{url('assets/img')}}/8.png"  style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/seenom/img')}}/8.png"  style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>270 ML</p>
             </div>
             <div class="block b_tw">
-              <figure><img src="{{url('assets/img')}}/6.png" style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/seenom/img')}}/6.png" style="width: 55%" alt="" />
                 <figcaption>SEENOM</figcaption>
               </figure>
               <p>500 ML</p>
@@ -146,28 +146,28 @@
           <center><p style="font-size: 1.3rem">Ini adalah beberapa testimoni dari pelanggan yang membeli SEENOM dan BERUSH KENCUR.</p></center>
           <div class="slider tes">
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s1.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s1.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s2.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s2.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s3.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s3.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s4.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s4.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s5.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s5.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s6.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s6.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s7.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s7.png" style="width: 85%" alt="" />
             </div>
             <div class="blockquote">
-              <img src="{{url('assets/img')}}/s8.png" style="width: 85%" alt="" />
+              <img src="{{url('assets/seenom/img')}}/s8.png" style="width: 85%" alt="" />
             </div>
           </div>
       </section>
@@ -175,22 +175,22 @@
         <h2>GALL<span>ERY</span></h2>
           <div class="grid g_three news">
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w1.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w1.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w2.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w2.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w7.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w7.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w4.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w4.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w6.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w6.jpeg" style="width: 80%"></center>
             </div>
             <div class="post">
-              <center><img src="{{url('assets/img')}}/w5.jpeg" style="width: 80%"></center>
+              <center><img src="{{url('assets/seenom/img')}}/w5.jpeg" style="width: 80%"></center>
             </div>
           </div>
       </section>

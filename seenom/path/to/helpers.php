@@ -306,8 +306,8 @@ if (!function_exists('asset')) {
     function asset($path, $secure = null)
     {
         // return (new UrlGenerator(app()))->to($path, null, $secure);
-        // $root = $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/seenomberushkencur/assets';
-        $root = 'http://127.0.0.1/seenomberushkencur/assets';
+        $root = $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/assets';
+        // $root = 'http://127.0.0.1/seenomberushkencur/assets';
         return $root;
     }
 }
