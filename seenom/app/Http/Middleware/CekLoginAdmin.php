@@ -17,7 +17,6 @@ class CekLoginAdmin
     {
         $sesi = $request->session()->get('izin');
         if($sesi == "tidak" || $sesi == null) {
-          \View::share('user', 'user');
           return redirect('login');
         }
 
