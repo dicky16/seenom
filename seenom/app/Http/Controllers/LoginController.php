@@ -49,8 +49,8 @@ class LoginController extends Controller
 
       $user = User::where('username', $username)->get();
 
-      if(!$user) {
-        dd('salah');
+      if(count($user) == 0) {
+        return redirect()->back()->with('status', 'false');
       }
 
       if(Hash::check($password, $user[0]->password)) {
