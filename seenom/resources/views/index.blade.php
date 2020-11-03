@@ -28,7 +28,7 @@
 <body translate="no">
   <div class="smooth">
       <header id="top">
-        <h3>seenomberushkencur{{url('')}}</h3>
+        <h3>seenomberushkencur</h3>
           <nav>
           <ul>
             <li><a href="#home" title="Home">Home</a></li>
