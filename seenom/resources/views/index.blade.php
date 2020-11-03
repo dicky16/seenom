@@ -62,7 +62,7 @@
           </div>
           <div class="blur">
             <form>
-                <img src="<?php echo $img."/" ?>ho.png" style="width: 55%;">
+                <img src="{{url('assets/seenom/img')}}/ho.png" style="width: 55%;">
             <!-- <input type="text" name="" placeholder="Email:" />
             <input type="text" name="" placeholder="Password:" /><a class="button" title="Behance" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/gallery/86619879/Landing-Page-IOGO-MEDIA-(Concept-Update)">Click here</a> -->
             </form>
@@ -88,13 +88,13 @@
           <p style="font-size: 1.3rem">Minuman sehat ini terbuat dari daun asam, gula asli, kunyit, asam jawa. Diolah 100% tanpa bahan pengawet menjadikan minuman ini menyehatkan yang sebenarnya.SEENOM See Freshy Feel Healthy.</p>
           <div class="slider autoplay">
             <div class="block b_th">
-              <figure><img src="<?php echo $img."/" ?>9.png" style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/seenom/img')}}/9.png" style="width: 55%" alt="" />
                 <figcaption>BERUSH KENCUR</figcaption>
               </figure>
               <p>270 ML</p>
             </div>
             <div class="block b_fo">
-              <figure><img src="<?php echo $img."/" ?>7.png" style="width: 55%" alt="" />
+              <figure><img src="{{url('assets/seenom/img')}}/7.png" style="width: 55%" alt="" />
                 <figcaption>BERUSH KENCUR</figcaption>
               </figure>
               <p>500 ML</p>
